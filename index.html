@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dweep Patil - Portfolio</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Arial', sans-serif;
+      color: #fff;
+      background-color: #121212;
+      display: flex;
+    }
+
+    .sidebar {
+      background-color: #1e1e1e;
+      width: 300px;
+      min-height: 100vh;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5);
+    }
+
+    .sidebar h1 {
+      font-size: 24px;
+      margin: 10px 0;
+    }
+
+    .sidebar p {
+      font-size: 14px;
+      color: #bbb;
+      margin-bottom: 20px;
+    }
+
+    .sidebar .info {
+      font-size: 14px;
+      margin-bottom: 10px;
+    }
+
+    .content {
+      flex: 1;
+      padding: 20px 40px;
+    }
+
+    .content h2 {
+      font-size: 28px;
+      margin-bottom: 20px;
+      color: #ffd700;
+    }
+
+    .about {
+      margin-bottom: 30px;
+    }
+
+    .about p {
+      font-size: 16px;
+      line-height: 1.6;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background: #1e1e1e;
+      padding: 20px;
+      border-radius: 10px;
+      text-align: center;
+      transition: transform 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .card h3 {
+      font-size: 20px;
+      margin-bottom: 10px;
+    }
+
+    .card p {
+      font-size: 14px;
+      color: #bbb;
+    }
+
+    .navbar {
+      display: flex;
+      justify-content: center;
+      margin-top: 20px;
+    }
+
+    .navbar a {
+      text-decoration: none;
+      color: #bbb;
+      padding: 10px 20px;
+      margin: 0 5px;
+      border: 1px solid #444;
+      border-radius: 5px;
+      transition: background-color 0.3s;
+    }
+
+    .navbar a:hover {
+      background-color: #444;
+    }
+  </style>
+</head>
+<body>
+  <div class="sidebar">
+    <h1>Dweep Patil</h1>
+    <p>Python Developer</p>
+
+    <div class="info">Mumbai, Maharashtra, India</div>
+    <div class="info">dweep.s.patil@gmail.com</div>
+    <div class="info">+91-8261096869</div>
+  </div>
+
+  <div class="content">
+    <h2>About Me</h2>
+    <div class="about">
+      <p>I am a Python Developer eager to apply my programming skills in real-world settings. I enjoy working on web technologies and have experience with frameworks like Django and frontend languages like HTML, CSS, and JavaScript.</p>
+    </div>
+
+    <h2>Skills</h2>
+    <div class="cards">
+      <div class="card">
+        <h3>Python</h3>
+        <p>Proficient in Python programming for web and application development.</p>
+      </div>
+      <div class="card">
+        <h3>Django</h3>
+        <p>Experience in building dynamic web applications using Django framework.</p>
+      </div>
+      <div class="card">
+        <h3>HTML, CSS, JavaScript</h3>
+        <p>Skilled in frontend technologies for creating interactive user interfaces.</p>
+      </div>
+    </div>
+
+    <h2>Projects</h2>
+    <div class="cards">
+      <div class="card">
+        <h3>3D-Space Calculator</h3>
+        <p>Developed using Java, HTML, CSS to measure 3D objects efficiently.</p>
+      </div>
+      <div class="card">
+        <h3>Blogit</h3>
+        <p>A blogging platform created with Django for a seamless user experience.</p>
+      </div>
+      <div class="card">
+        <h3>Weather App</h3>
+        <p>Python-based weather app providing real-time weather updates and forecasts.</p>
+      </div>
+      <div class="card">
+        <h3>Expense Tracker</h3>
+        <p>A tool to track expenses and manage personal finances efficiently using Python.</p>
+      </div>
+    </div>
+
+    <h2>Certifications</h2>
+    <div class="cards">
+      <div class="card">
+        <h3>Python for Beginners</h3>
+        <p>Udemy Certification</p>
+      </div>
+      <div class="card">
+        <h3>PHP with MySQL</h3>
+        <p>Udemy Certification</p>
+      </div>
+      <div class="card">
+        <h3>Python Pro Bootcamp</h3>
+        <p>Udemy Certification</p>
+      </div>
+    </div>
+
+    <h2>Interests</h2>
+    <div class="cards">
+      <div class="card">
+        <h3>Technology</h3>
+        <p>Passionate about exploring emerging tech trends and innovations.</p>
+      </div>
+      <div class="card">
+        <h3>Gaming</h3>
+        <p>Enjoys gaming and understanding game mechanics and design.</p>
+      </div>
+      <div class="card">
+        <h3>Reading</h3>
+        <p>Loves reading about programming, psychology, and self-development.</p>
+      </div>
+    </div>
+
+    <h2>Language Proficiency</h2>
+    <div class="cards">
+      <div class="card">
+        <h3>English</h3>
+        <p>Intermediate</p>
+      </div>
+      <div class="card">
+        <h3>Marathi</h3>
+        <p>Intermediate</p>
+      </div>
+      <div class="card">
+        <h3>Hindi</h3>
+        <p>Intermediate</p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
