@@ -22,6 +22,7 @@
       flex-direction: column;
       align-items: center;
       box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5);
+      position: fixed;
     }
 
     .sidebar h1 {
@@ -40,9 +41,31 @@
       margin-bottom: 10px;
     }
 
+    .navbar {
+      margin-top: 20px;
+      width: 100%;
+    }
+
+    .navbar a {
+      text-decoration: none;
+      color: #bbb;
+      padding: 10px 20px;
+      display: block;
+      text-align: center;
+      border: 1px solid #444;
+      border-radius: 5px;
+      margin: 5px 0;
+      transition: background-color 0.3s;
+    }
+
+    .navbar a:hover, .navbar a.active {
+      background-color: #444;
+    }
+
     .content {
       flex: 1;
       padding: 20px 40px;
+      margin-left: 320px;
     }
 
     .content h2 {
@@ -71,11 +94,12 @@
       padding: 20px;
       border-radius: 10px;
       text-align: center;
-      transition: transform 0.3s;
+      transition: transform 0.3s, box-shadow 0.3s;
     }
 
     .card:hover {
       transform: translateY(-5px);
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
     }
 
     .card h3 {
@@ -87,26 +111,6 @@
       font-size: 14px;
       color: #bbb;
     }
-
-    .navbar {
-      display: flex;
-      justify-content: center;
-      margin-top: 20px;
-    }
-
-    .navbar a {
-      text-decoration: none;
-      color: #bbb;
-      padding: 10px 20px;
-      margin: 0 5px;
-      border: 1px solid #444;
-      border-radius: 5px;
-      transition: background-color 0.3s;
-    }
-
-    .navbar a:hover {
-      background-color: #444;
-    }
   </style>
 </head>
 <body>
@@ -117,97 +121,141 @@
     <div class="info">Mumbai, Maharashtra, India</div>
     <div class="info">dweep.s.patil@gmail.com</div>
     <div class="info">+91-8261096869</div>
+
+    <div class="navbar">
+      <a href="#about" class="active">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#certifications">Certifications</a>
+      <a href="#interests">Interests</a>
+      <a href="#languages">Languages</a>
+    </div>
   </div>
 
   <div class="content">
-    <h2>About Me</h2>
-    <div class="about">
-      <p>I am a Python Developer eager to apply my programming skills in real-world settings. I enjoy working on web technologies and have experience with frameworks like Django and frontend languages like HTML, CSS, and JavaScript.</p>
-    </div>
+    <section id="about">
+      <h2>About Me</h2>
+      <div class="about">
+        <p>I am a Python Developer eager to apply my programming skills in real-world settings. I enjoy working on web technologies and have experience with frameworks like Django and frontend languages like HTML, CSS, and JavaScript.</p>
+      </div>
+    </section>
 
-    <h2>Skills</h2>
-    <div class="cards">
-      <div class="card">
-        <h3>Python</h3>
-        <p>Proficient in Python programming for web and application development.</p>
+    <section id="skills">
+      <h2>Skills</h2>
+      <div class="cards">
+        <div class="card">
+          <h3>Python</h3>
+          <p>Proficient in Python programming for web and application development.</p>
+        </div>
+        <div class="card">
+          <h3>Django</h3>
+          <p>Experience in building dynamic web applications using Django framework.</p>
+        </div>
+        <div class="card">
+          <h3>HTML, CSS, JavaScript</h3>
+          <p>Skilled in frontend technologies for creating interactive user interfaces.</p>
+        </div>
       </div>
-      <div class="card">
-        <h3>Django</h3>
-        <p>Experience in building dynamic web applications using Django framework.</p>
-      </div>
-      <div class="card">
-        <h3>HTML, CSS, JavaScript</h3>
-        <p>Skilled in frontend technologies for creating interactive user interfaces.</p>
-      </div>
-    </div>
+    </section>
 
-    <h2>Projects</h2>
-    <div class="cards">
-      <div class="card">
-        <h3>3D-Space Calculator</h3>
-        <p>Developed using Java, HTML, CSS to measure 3D objects efficiently.</p>
+    <section id="projects">
+      <h2>Projects</h2>
+      <div class="cards">
+        <div class="card">
+          <h3>3D-Space Calculator</h3>
+          <p>Developed using Java, HTML, CSS to measure 3D objects efficiently.</p>
+        </div>
+        <div class="card">
+          <h3>Blogit</h3>
+          <p>A blogging platform created with Django for a seamless user experience.</p>
+        </div>
+        <div class="card">
+          <h3>Weather App</h3>
+          <p>Python-based weather app providing real-time weather updates and forecasts.</p>
+        </div>
+        <div class="card">
+          <h3>Expense Tracker</h3>
+          <p>A tool to track expenses and manage personal finances efficiently using Python.</p>
+        </div>
       </div>
-      <div class="card">
-        <h3>Blogit</h3>
-        <p>A blogging platform created with Django for a seamless user experience.</p>
-      </div>
-      <div class="card">
-        <h3>Weather App</h3>
-        <p>Python-based weather app providing real-time weather updates and forecasts.</p>
-      </div>
-      <div class="card">
-        <h3>Expense Tracker</h3>
-        <p>A tool to track expenses and manage personal finances efficiently using Python.</p>
-      </div>
-    </div>
+    </section>
 
-    <h2>Certifications</h2>
-    <div class="cards">
-      <div class="card">
-        <h3>Python for Beginners</h3>
-        <p>Udemy Certification</p>
+    <section id="certifications">
+      <h2>Certifications</h2>
+      <div class="cards">
+        <div class="card">
+          <h3>Python for Beginners</h3>
+          <p>Udemy Certification</p>
+        </div>
+        <div class="card">
+          <h3>PHP with MySQL</h3>
+          <p>Udemy Certification</p>
+        </div>
+        <div class="card">
+          <h3>Python Pro Bootcamp</h3>
+          <p>Udemy Certification</p>
+        </div>
       </div>
-      <div class="card">
-        <h3>PHP with MySQL</h3>
-        <p>Udemy Certification</p>
-      </div>
-      <div class="card">
-        <h3>Python Pro Bootcamp</h3>
-        <p>Udemy Certification</p>
-      </div>
-    </div>
+    </section>
 
-    <h2>Interests</h2>
-    <div class="cards">
-      <div class="card">
-        <h3>Technology</h3>
-        <p>Passionate about exploring emerging tech trends and innovations.</p>
+    <section id="interests">
+      <h2>Interests</h2>
+      <div class="cards">
+        <div class="card">
+          <h3>Technology</h3>
+          <p>Passionate about exploring emerging tech trends and innovations.</p>
+        </div>
+        <div class="card">
+          <h3>Gaming</h3>
+          <p>Enjoys gaming and understanding game mechanics and design.</p>
+        </div>
+        <div class="card">
+          <h3>Reading</h3>
+          <p>Loves reading about programming, psychology, and self-development.</p>
+        </div>
       </div>
-      <div class="card">
-        <h3>Gaming</h3>
-        <p>Enjoys gaming and understanding game mechanics and design.</p>
-      </div>
-      <div class="card">
-        <h3>Reading</h3>
-        <p>Loves reading about programming, psychology, and self-development.</p>
-      </div>
-    </div>
+    </section>
 
-    <h2>Language Proficiency</h2>
-    <div class="cards">
-      <div class="card">
-        <h3>English</h3>
-        <p>Intermediate</p>
+    <section id="languages">
+      <h2>Language Proficiency</h2>
+      <div class="cards">
+        <div class="card">
+          <h3>English</h3>
+          <p>Intermediate</p>
+        </div>
+        <div class="card">
+          <h3>Marathi</h3>
+          <p>Intermediate</p>
+        </div>
+        <div class="card">
+          <h3>Hindi</h3>
+          <p>Intermediate</p>
+        </div>
       </div>
-      <div class="card">
-        <h3>Marathi</h3>
-        <p>Intermediate</p>
-      </div>
-      <div class="card">
-        <h3>Hindi</h3>
-        <p>Intermediate</p>
-      </div>
-    </div>
+    </section>
   </div>
+
+  <script>
+    const navbarLinks = document.querySelectorAll('.navbar a');
+    const sections = document.querySelectorAll('section');
+
+    window.addEventListener('scroll', () => {
+      let current = '';
+
+      sections.forEach(section => {
+        const sectionTop = section.offsetTop - 100;
+        if (pageYOffset >= sectionTop) {
+          current = section.getAttribute('id');
+        }
+      });
+
+      navbarLinks.forEach(link => {
+        link.classList.remove('active');
+        if (link.getAttribute('href') === `#${current}`) {
+          link.classList.add('active');
+        }
+      });
+    });
+  </script>
 </body>
 </html>
